@@ -1,0 +1,25 @@
+Problema03 (miniespecificación -use ciclo mientras-)
+Generar e imprimir la siguiente serie:
++1/1-1/3+1/5-1/7+1/9
+--------------------------------------------------------------------------------------
+
+1. Inicio
+2. numerador, i[0, n] <-- 1
+3. denominador, i[0, n] <-- 1
+4. limite, i[0, n] <-- 9
+5. suma, x(3) [{+}]
+6. resta, x(3) [{-}]
+7. cadena, x(200)[{1-9},{a-z},{A-Z}, {/}, {+}, {-}] <-- ""
+8. simbolo_matematico x(3) [{+}, {-}]
+9. mientras
+10. denominador <= limite 
+11. si (denominador ==3 || denominador == 7) entonces
+12.      simbolo_matematico <-- resta
+13. caso contrario
+        simbolo_matematico <-- suma
+
+14. cadena <-- cadena + simbolo_matematico + numerador + "/" + denominador
+15. denominador <-- denominador + 2
+16. Fin mientras
+17. Escribir cadena
+18. Fin  
